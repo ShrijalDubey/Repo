@@ -1,0 +1,65 @@
+.heading-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 1700px;
+}
+.card {
+    background-color:#142946;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: #ffffff;
+}
+.image {
+    font-size: 30px;
+    padding: 8px;
+    border: #203757 2px solid;
+    border-radius: 10px;
+    background-color: #8b5cf6;
+}
+.para {
+    font-size: 14px;
+    text-align: start;
+    margin-top: 10px;
+}
+.title{
+    margin-top: 10px;
+}
+.play{
+    background-color: green;
+}
+.share{
+    background-color: orange;
+}
+.user{
+    background-color: rgb(0, 145, 255);
+}
+.message{
+    background-color: blue;
+}
+.bolt{
+    background-color: red;
+}
+.card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.1s ease;
+  transition: 0.3s;
+  box-shadow: 0px 0px 15px 0px #6366f1;
+}
