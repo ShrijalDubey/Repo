@@ -1,17 +1,19 @@
-import { Navbar } from './components/navbar';
-import { Body } from './components/body';
-import { Cards } from './components/cards';
-import { Footer } from './components/footerbox';
+import React from "react";
+import EditorNavbar from "./components/EditorNavbar";
+import Footer from "./components/footerbox";
+import Navbar from "./components/navbar";
+import Cards from "./components/cards";
+import Body from "./components/body";
 
-function App() {
+
+export default function App() {
   return (
-    <div>
-      <Navbar />
-      <Body />
-      <Cards /> 
-      <Footer />
-    </div>
+    <>
+    <Navbar />
+    <Body />
+    <Cards />
+    <Footer />
+    <EditorNavbar />
+    </>
   );
 }
-
-export default App

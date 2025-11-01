@@ -1,0 +1,34 @@
+.editorbox{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 900px;  
+}
+.output-container {
+  margin-top: 20px;
+}
+
+.output-container h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #ffffff;
+  overflow: visible;
+}
+.editor-page{
+position: relative;
+  overflow: hidden; /* or auto */
+  display: flex;
+}
+
+.output-box {
+  background-color: #1e1e1e;       
+  border: 1px solid #3c3c3c;       
+  color: #ffffff2f;             
+  padding: 15px;
+  width: 25%;
+  margin-left: -1px;           
+} 
+.output-container {
+  display: flex;
+  flex-direction: column;
+}

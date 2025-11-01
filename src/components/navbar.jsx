@@ -1,5 +1,5 @@
 import './Navbar.css';
-export function Navbar() {
+export default function Navbar() {
   return (
     <nav className="container">
         <div className="box">

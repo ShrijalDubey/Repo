@@ -1,5 +1,5 @@
 import './cards.css';
-export function Cards() {
+export default function Cards() {
   return (
     <>
     <div className="heading-cont">

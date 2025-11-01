@@ -1,0 +1,32 @@
+.editor-nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(47, 46, 46);
+    border-bottom: 1px solid #454343;
+    height: 80px;
+}
+.rightnav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.leftnav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.edit-button{
+    padding: 8px 22px;
+    background-color: #4e4e4e;
+    color:#ffffff;
+    border:#454343 1px solid ;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 55 0;
+    height: 48px;
+    word-spacing: 8px;
+    border: rgb(13, 216, 3)
+}

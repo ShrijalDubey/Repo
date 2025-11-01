@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    margin-top: 120px;   
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;   
 }
 .footer-cont{
     text-align: center;

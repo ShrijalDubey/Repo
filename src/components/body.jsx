@@ -1,5 +1,5 @@
 import './body.css';
-export function Body() {
+export default function Body() {
   return (
     <>
     <div className="main-cont">
