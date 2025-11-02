@@ -14,7 +14,7 @@ export default function EditorNavbar() {
           <button className="edit-button" onClick={() => navigate("/")}>
             <i className="fa-solid fa-arrow-left"></i> Back
           </button>
-          <input style={{ width: "400px" }} className="edit-button" type="text" placeholder="Filename" />
+          <input style={{ width: "400px" }} className="edit-button" type="text" placeholder="FileName" />
         </div>
         <div className="rightnav">
           <select className="edit-button" onChange={(e) => setLanguage(e.target.value)}>

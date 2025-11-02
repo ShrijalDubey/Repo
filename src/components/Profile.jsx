@@ -1,10 +1,11 @@
-import React from 'react'
-import logo from '../assets/profilephoto.jpg'
-import './Profile.css'
+import React from 'react';
+import logo from '../assets/profilephoto.jpg';
+import './Profile.css';
 import java from "../assets/java.png";
 import python from "../assets/pyt.svg";
 import cpp from "../assets/css.png";
 import javascript from "../assets/js.png";
+import { MdDeleteForever } from "react-icons/md";
 
 export default function Profile() {
   return (
@@ -35,7 +36,7 @@ export default function Profile() {
                 <h2>Bubble Sort</h2>
                 <p>Java</p>
                 </div>
-                <div >
+                <div >  
                     <button className='view-repo'>View REPO</button>
                 </div>
             </div>

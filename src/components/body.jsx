@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import './body.css';
+
 export default function Body() {
+    const navigate = useNavigate();
   return (
     <>
     <div className="main-cont">
@@ -15,8 +18,8 @@ export default function Body() {
             <p className='desc2'> community of learners practicing algorithms together.</p>
         </div>
         <div className='btndiv'>
-            <button className='startbtn'><i class="fa-solid fa-play"></i> Get Started</button>
-            <button className='expbtn   '><i class="fa-solid fa-user-group"></i> Explore Community</button>
+            <button onClick={() => navigate("/login")} className='startbtn'><i class="fa-solid fa-play"></i> Get Started</button>
+            <button onClick={() => navigate("/community")} className='expbtn   '><i class="fa-solid fa-user-group"></i> Explore Community</button>
         </div>
     </div>
     </>

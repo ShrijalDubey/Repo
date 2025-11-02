@@ -2,6 +2,9 @@ import React from 'react'
 import './Community.css';
 import './Doubts.css';
 import photo from '../assets/pfp.png';
+import AskDoubtModal from "./AskDoubtModal";
+import AnswerDoubtModal from "./AnswerDoubtModal";
+
 
 export default function Doubts() {
   return (

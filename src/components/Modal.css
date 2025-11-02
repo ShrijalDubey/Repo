@@ -1,0 +1,79 @@
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(3px);
+  z-index: 9999; /* very high so it sits on top */
+}
+
+/* container centered and responsive */
+.modal-container {
+  width: 720px;
+  max-width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #0b1220; /* dark background */
+  color: #e6eef8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  -webkit-overflow-scrolling: touch;
+  z-index: 10000;
+}
+
+/* header */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* close button */
+.modal-close {
+  background: transparent;
+  border: none;
+  color: #e6eef8;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+.modal-close:hover { opacity: 0.9; }
+
+/* content */
+.modal-content {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #dbeafe;
+}
+
+/* code block style if used inside modal */
+.code-block {
+  background: #07101a;
+  color: #e6eef8;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Source Code Pro", monospace;
+  font-size: 13px;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* small responsiveness tweaks */
+@media (max-width: 480px) {
+  .modal-container { padding: 14px; }
+  .modal-header h2 { font-size: 1rem; }
+}

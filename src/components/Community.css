@@ -110,3 +110,8 @@
     font-weight: 600;
     cursor: pointer;
 }
+.com-post:hover {
+    background-color: #cc8400;
+    transition: background-color 0.2s ease;
+}
+    
