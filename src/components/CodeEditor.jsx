@@ -16,10 +16,14 @@ export default function CodeEditor() {
           value={code}
           onChange={(value) => setCode(value)}
           options={{
-            fontSize: 16,
+            fontSize: 24,
             minimap: { enabled: false },
             fixedOverflowWidgets: true,
             overflowWidgetsDomNode: document.body,
+            padding: {
+      top: 20,     
+      bottom: 10,   
+    },
           }}
         />
       </div>

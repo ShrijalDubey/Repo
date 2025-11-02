@@ -5,11 +5,15 @@
   justify-content: center;
   padding: 20px;
   height: 600px;
+    background: linear-gradient(90deg, #050b14 0%, #081520 50%, #0a2530 100%);
+    background-image: 
+    radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.6) 100%),
+    linear-gradient(90deg, #050b14 0%, #081520 50%, #0a2530 100%);
 }
 .practice {
     font-size: 13px;
     color: #e5e7eb;
-    background-color: #6365f120;
+    background-color: #6365f14b;
     padding: 10px 20px 10px 20px;
     border: #c0b6d6 1px solid;
     border-radius: 25px;

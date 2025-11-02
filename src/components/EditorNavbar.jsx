@@ -5,7 +5,7 @@ import "./EditorNavbar.css";
 
 export default function EditorNavbar() {
   const [language, setLanguage] = useState("javascript");
-  const navigate = useNavigate(); // ✅
+  const navigate = useNavigate();
 
   return (
     <>
