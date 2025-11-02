@@ -7,15 +7,16 @@ import Footer from "./components/footerbox";
 import EditorNavbar from "./components/EditorNavbar";
 import Community from "./components/Community";
 import Doubts from "./components/Doubts";
+import Profile from "./components/Profile";
 
 export default function App() {
   return (
     <>
-      
+      <Navbar />
       <Routes>
         <Route path="/" element={
           <>
-            <Navbar />
+           
             <Body />
             <Cards />
             <Footer />
@@ -23,28 +24,28 @@ export default function App() {
         } />
         <Route path="/editor" element={
           <>
-          <Navbar />
+          
           <EditorNavbar />
           </>
           } />
         <Route path="/community" element={
           <>
-          <Navbar />
+       
           <Community />
           </>} />
         <Route path="/doubts" element={
           <>
-          <Navbar />
+      
           <Doubts />
           </>} />
         <Route path="/profile" element={
           <>
-          <Navbar />
-          <h1 style={{color:'white'}}>Profile Page</h1>
+         
+          <Profile />
           </>} />
         <Route path="/login" element={
           <>
-          <Navbar />
+         
           <h1 style={{color:'white'}}>Login Page</h1>
           </>
         } />

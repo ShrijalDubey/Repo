@@ -4,27 +4,27 @@ export default function Cards() {
     <>
     <div className="heading-cont">
     <div className="card-cont">
-        <div className="card">
+        <div  className="card">
             <i class="fa-solid fa-code image"></i>
             <h2 className='title color-text'>Multi-Language Editor</h2>
             <p className='para'>Write code in Java, C++, Python,<br/> or JavaScript with syntax highlighting<br/> and auto-save. </p>
         </div>
-        <div className="card">
+        <div  className="card">
             <i class="fa-solid fa-play play image"></i>
             <h2 className='title color-text'>Instant Execution</h2>
             <p className='para'>Run your code instantly and see results with execution time and memory usage.</p>
         </div>
-        <div className="card">
+        <div  className="card">
             <i class="fa-solid fa-share share image"></i>
             <h2 className='title color-text'>Share & Collaborate</h2>
             <p className='para'>Share your solutions<br/> with the community and learn from<br/> others' approaches.</p>
         </div>
-        <div className="card">
+        <div  className="card">
             <i class="fa-solid fa-user-group user image"></i>
             <h2 className='title color-text'>Active Community</h2>
             <p className='para'>Browse community solutions,<br/> discover new approaches, and get inspired.</p>
         </div>
-        <div className="card">
+        <div  className="card">
             <i class="fa-regular fa-message message image"></i>
             <h2 className='title color-text'>Ask Doubts</h2>
             <p className='para'>Stuck on a problem?<br/> Ask the community and get<br/> help from fellow learners.</p>

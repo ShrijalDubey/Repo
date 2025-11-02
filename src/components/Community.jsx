@@ -7,8 +7,13 @@ export default function Community() {
     <>
     <div className="community-cont">
         <div className="com-heading">
-            <h1 style={{fontSize:"40px", fontWeight:"900" }} >Community Showcase</h1>
-            <p>Discover and learn from solutions shared by the community</p>
+            <div className='com-hero'>
+                <h1 style={{fontSize:"40px", fontWeight:"900" }} >Community Showcase</h1>
+                <p>Discover and learn from solutions shared by the community</p>
+            </div>  
+            <div className='com-post'>
+                <i class="fa-solid fa-plus"></i> Post
+            </div>
         </div>
         <div className="com-search">
             <input className='com-searchbar' type="text" placeholder="Search REPO..." />
