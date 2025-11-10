@@ -3,7 +3,6 @@
     align-items: start;
     text-align: start;
     gap: 30px;
-    
 }
 .prof-cont {
     padding: 40px;
@@ -51,4 +50,13 @@
 .view-repo:hover {
     background-color: #084a8a;
     transition: background-color 0.2s ease;
+}
+.fa-trash-can{
+    color: white; 
+    font-size: 16px;
+    border-radius: 5px;  
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: red;
+    padding: 10px;
 }
