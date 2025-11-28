@@ -8,10 +8,13 @@ import EditorNavbar from "./components/EditorNavbar.jsx";
 import Community from "./components/Community.jsx";
 import Doubts from "./components/Doubts.jsx";
 import Profile from "./components/Profile.jsx";
+import CodeEditor from "./components/CodeEditor";
+import { LanguageProvider } from "./components/LanguageContext";
 
 export default function App() {
   return (
     <>
+    <LanguageProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={
@@ -24,8 +27,9 @@ export default function App() {
         } />
         <Route path="/editor" element={
           <>
-          
-          <EditorNavbar />
+
+                <CodeEditor />
+
           </>
           } />
         <Route path="/community" element={
@@ -50,6 +54,7 @@ export default function App() {
           </>
         } />
       </Routes>
+      </LanguageProvider>
     </>
   );
 }

@@ -1,36 +1,53 @@
-import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import CodeEditor from "./CodeEditor";
+import { useContext } from "react";
+import { LanguageContext } from "./LanguageContext";
 import styles from '../css/EditorNavbar.module.css';
+import { runWithPiston } from "./runCode";
 
-export default function EditorNavbar() {
-  const [language, setLanguage] = useState("javascript");
+export default function EditorNavbar({ code, setOutput }) {
+
   const navigate = useNavigate();
+  const { setLanguage } = useContext(LanguageContext);
+
+   async function handleRun() {
+    setOutput("⏳ Running...");
+    const result = await runWithPiston(code);
+    setOutput(result);
+  }
 
   return (
     <>
       <div className={styles.editornavcont}>
+        
         <div className={styles.leftnav}>
           <button className={styles.editbutton} onClick={() => navigate("/")}>
             <i className="fa-solid fa-arrow-left"></i> Back
           </button>
-          <input style={{ width: "400px" }} className={styles.editbutton} type="text" placeholder="FileName" />
+
+          <input className={styles.filename} type="text" placeholder="Untitled File" />
+
+          <button className={`${styles.editbutton} ${styles.runbtn}`} onClick={handleRun}>
+            <i className="fa-solid fa-play"></i> Run
+          </button>
         </div>
+
+
         <div className={styles.rightnav}>
-          <select className={styles.editbutton} onChange={(e) => setLanguage(e.target.value)}>
-            <option value={styles.javascript}>JavaScript</option>
-            <option value={styles.python}>Python</option>
-            <option value={styles.cpp}>C++</option>
-            <option value={styles.java}>Java</option>
+
+
+          <select className={styles.select} onChange={(e) => setLanguage(e.target.value)}>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="cpp">C++</option>
+            <option value="c">C</option>
           </select>
-          <p style={{ color: "rgba(11, 187, 1, 1)" }}>
-            <i style={{ color: "rgba(11, 187, 1, 1)" }} className="fa-solid fa-check"></i> Saved
-          </p>
+
+          <p className={styles.saved}><i style={{ color: "rgba(11, 187, 1, 1)" }} className="fa-solid fa-check"></i> Saved</p>
+
           <button className={styles.editbutton}><i className="fa-solid fa-floppy-disk"></i> Save</button>
-          <button style={{ backgroundColor: "rgba(11, 187, 1, 1)" }} className={styles.editbutton}><i className="fa-solid fa-play"></i> Run</button>
         </div>
       </div>
-      <CodeEditor />
     </>
   );
 }

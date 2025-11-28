@@ -1,8 +1,5 @@
 .editorbox{
-  position: relative;
-  z-index: 1;
-  height: 86vmin;
-  width: 75%;  
+width: 75%;
 }
 .outputcontainer {
   margin-top: 20px;
@@ -12,18 +9,16 @@
   margin-bottom: 8px;
   font-size: 18px;
   color: #ffffff;
-  overflow: visible;
+
 }
 .editorpage{
-  position: relative;
-  overflow: hidden;
   display: flex;
-  height: 100%;
+
 }
 
 .outputbox {
   background-color: #1e1e1e;       
-  border: 1px solid #3c3c3c;       
+     
   color: #ffffff2f;             
   padding: 15px;
   width: 25%;          
