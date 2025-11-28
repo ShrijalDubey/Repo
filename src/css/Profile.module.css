@@ -60,3 +60,12 @@
     background-color: red;
     padding: 10px;
 }
+.image {
+    color: white; 
+    font-size: 16px;
+    border-radius: 5px;  
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: red;
+    padding: 10px;
+}

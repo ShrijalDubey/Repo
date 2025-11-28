@@ -32,7 +32,7 @@ export default function Profile() {
                 <p>Java</p>
                 </div>
                 <div >
-                    <i className="fa-solid fa-trash-can"></i>  
+                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>   
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
             </div>
@@ -42,7 +42,7 @@ export default function Profile() {
                 <p>Java</p>
                 </div>
                 <div >
-                    <i className="fa-solid fa-trash-can"></i>  
+                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
             </div>
@@ -52,7 +52,7 @@ export default function Profile() {
                 <p>Java</p>
                 </div>
                 <div >
-                    <i className="fa-solid fa-trash-can"></i>  
+                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
             </div>
@@ -62,7 +62,7 @@ export default function Profile() {
                 <p>Java</p>
                 </div>
                 <div >
-                    <i className="fa-solid fa-trash-can"></i>  
+                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
             </div>
@@ -72,7 +72,7 @@ export default function Profile() {
                 <p>Java</p>
                 </div>
                 <div >
-                    <i className="fa-solid fa-trash-can"></i>  
+                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
             </div>
@@ -82,7 +82,7 @@ export default function Profile() {
                 <p>Java</p>
                 </div>
                 <div >
-                    <i className="fa-solid fa-trash-can"></i>  
+                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
             </div>
