@@ -9,35 +9,33 @@ export default function CodeEditor() {
     const { language } = useContext(LanguageContext);
     const [code, setCode] = useState(boilerCode[language]);
     const [output, setOutput] = useState("Click Run to see output...");
-    
-     useEffect(() => {
-    setCode(boilerCode[language]);
-  }, [language]);
+    const [isError, setIsError] = useState(false);
 
-  return (
-    <>
-    <EditorNavbar code={code} setOutput={setOutput} />
-    <div className={styles.editorpage}>
-      
+    useEffect(() => {
+        setCode(boilerCode[language]);
+    }, [language]);
 
-      <div className={styles.editorbox}>
-        <Editor 
-        height="90vmin" 
-        language={language} 
-        defaultValue="// Write your code here..."
-        theme="vs-dark"
-        value={code}
-      onChange={(value) => setCode(value)}
-        options={{
-          fontSize: 24,
-          minimap: {
-          enabled: false,
-        },
-        padding: { top: 20 }
-  }} />
-      </div>
-          <div className={styles.outputbox}>{output}</div>
-      </div>
-      </>
-  );
+    return (
+        <>
+        <EditorNavbar code={code} setCode={setCode} setOutput={setOutput} language={language} setIsError={setIsError} 
+ />
+        <div className={styles.editorpage}>
+            <div className={styles.editorbox}>
+                <Editor 
+                    height="90vmin" 
+                    language={language} 
+                    value={code}
+                    onChange={(value) => setCode(value)}
+                    theme="vs-dark"
+                    options={{
+                        fontSize: 24,
+                        minimap: { enabled: false },
+                        padding: { top: 20 }
+                    }}
+                />
+            </div>
+            <div className={styles.outputbox} style={{ color: isError ? "red" : "green" }}>{output}</div>
+        </div>
+        </>
+    );
 }

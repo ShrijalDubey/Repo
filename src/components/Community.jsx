@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from '../css/Community.module.css'
 import photo from '../assets/pfp.png';
+import ComingSoon from './ComingSoon'
 
 export default function Community() {
   return (
     <>
+    <ComingSoon/>
     <div className={styles.communitycont}>
         <div className={styles.comheading}>
             <div className={styles.comhero}>

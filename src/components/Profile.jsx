@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from '../assets/profilephoto.jpg';
 import styles from '../css/Profile.module.css';
+import ComingSoon from './ComingSoon'
 
 export default function Profile() {
   return (
     <>
+    <ComingSoon/>
     <div className={styles.profcont}>
         <div className={styles.profhero}>
             <div>
@@ -56,36 +58,7 @@ export default function Profile() {
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
             </div>
-            <div className={styles.repocard}>
-                <div>
-                <h2>Bubble Sort</h2>
-                <p>Java</p>
-                </div>
-                <div >
-                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
-                    <button className={styles.viewrepo}>View REPO</button>
-                </div>
-            </div>
-            <div className={styles.repocard}>
-                <div>
-                <h2>Bubble Sort</h2>
-                <p>Java</p>
-                </div>
-                <div >
-                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
-                    <button className={styles.viewrepo}>View REPO</button>
-                </div>
-            </div>
-            <div className={styles.repocard}>
-                <div>
-                <h2>Bubble Sort</h2>
-                <p>Java</p>
-                </div>
-                <div >
-                    <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
-                    <button className={styles.viewrepo}>View REPO</button>
-                </div>
-            </div>
+            
         </div>
     </div>
     </>

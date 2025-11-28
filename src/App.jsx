@@ -10,6 +10,7 @@ import Doubts from "./components/Doubts.jsx";
 import Profile from "./components/Profile.jsx";
 import CodeEditor from "./components/CodeEditor";
 import { LanguageProvider } from "./components/LanguageContext";
+import ComingSoon from './components/ComingSoon'
 
 export default function App() {
   return (
@@ -28,7 +29,7 @@ export default function App() {
         <Route path="/editor" element={
           <>
 
-                <CodeEditor />
+            <CodeEditor />
 
           </>
           } />
@@ -49,8 +50,7 @@ export default function App() {
           </>} />
         <Route path="/login" element={
           <>
-         
-          <h1 style={{color:'white'}}>Login Page</h1>
+         <ComingSoon/>
           </>
         } />
       </Routes>

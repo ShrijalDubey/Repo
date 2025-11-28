@@ -3,12 +3,14 @@ import community from '../css/Community.module.css';
 import doubt from '../css/Doubts.module.css';
 import photo from '../assets/pfp.png';
 const styles = { ...community, ...doubt };
+import ComingSoon from './ComingSoon'
 
 
 
 export default function Doubts() {
   return (
     <>
+    <ComingSoon/>
     <div className={styles.doubtscont}>
         <div className={styles.dobhero}>
             <div className={styles.dobheading}>
