@@ -1,13 +1,13 @@
 import { useState } from "react";
 import Editor from "@monaco-editor/react";
-import "./CodeEditor.css";
+import styles from '../css/CodeEditor.module.css';
 
 export default function CodeEditor() {
   const [code, setCode] = useState("// Write your code here...");
 
   return (
-    <div className="editor-page">
-      <div className="editorbox">
+    <div className={styles.editorpage}>
+      <div className={styles.editorbox}>
         <Editor 
 
           height="100%"
@@ -28,7 +28,7 @@ export default function CodeEditor() {
         />
       </div>
 
-          <div className="output-box"><i>Click "Run" to see output here</i></div>
+          <div className={styles.outputbox}><i>Click "Run" to see output here</i></div>
 
       </div>
   );

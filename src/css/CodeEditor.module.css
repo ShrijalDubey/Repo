@@ -4,31 +4,31 @@
   height: 86vmin;
   width: 75%;  
 }
-.output-container {
+.outputcontainer {
   margin-top: 20px;
 }
 
-.output-container h3 {
+.outputcontainer h3 {
   margin-bottom: 8px;
   font-size: 18px;
   color: #ffffff;
   overflow: visible;
 }
-.editor-page{
+.editorpage{
   position: relative;
   overflow: hidden;
   display: flex;
   height: 100%;
 }
 
-.output-box {
+.outputbox {
   background-color: #1e1e1e;       
   border: 1px solid #3c3c3c;       
   color: #ffffff2f;             
   padding: 15px;
   width: 25%;          
 } 
-.output-container {
+.outputcontainer {
   display: flex;
   flex-direction: column;
 }

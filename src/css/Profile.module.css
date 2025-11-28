@@ -1,10 +1,10 @@
-.prof-hero{
+.profhero{
     display: flex;
     align-items: start;
     text-align: start;
     gap: 30px;
 }
-.prof-cont {
+.profcont {
     padding: 40px;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -13,7 +13,7 @@
     radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.6) 100%),
     linear-gradient(90deg, #050b14 0%, #081520 50%, #0a2530 100%);
 }
-.prof-stats{
+.profstats{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
@@ -26,10 +26,10 @@
     font-size: 22px;
     border-radius: 12px;
 }   
-.prof-list {
+.proflist {
     padding: 40px;
 }
-.repo-card {
+.repocard {
     background-color: #131313;
     border: #e5e5e5 1px dashed;
     border-radius: 12px;
@@ -39,7 +39,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.view-repo {
+.viewrepo {
     background-color: #0a66c2;
     color: white;
     padding: 10px 20px;
@@ -47,7 +47,7 @@
     border-radius: 5px;
     text-decoration: none;
 }
-.view-repo:hover {
+.viewrepo:hover {
     background-color: #084a8a;
     transition: background-color 0.2s ease;
 }

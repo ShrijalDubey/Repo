@@ -38,7 +38,7 @@ ul {
   border-radius: 12px;
   gap: 15px;
 }
-.color-text {
+.colortext {
   background: linear-gradient(90deg, #6a00f4, #4b9fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,10 +50,10 @@ ul {
   transition: 0.3s;
   box-shadow: 0px 0px 4px 0px #6366f1;
 }
-.login-btn {
+.loginbtn {
   background: #6a00f4
 }
-.login-btn:hover {
+.loginbtn:hover {
   box-shadow: 0px 0px 4px 0px #5d5ffb;
   opacity: 0.5;
   transition: 0.3;

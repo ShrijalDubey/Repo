@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Body from "./components/body";
-import Cards from "./components/cards";
-import Footer from "./components/footerbox";
-import EditorNavbar from "./components/EditorNavbar";
-import Community from "./components/Community";
-import Doubts from "./components/Doubts";
-import Profile from "./components/Profile";
+import Navbar from "./components/Navbar.jsx";
+import Body from "./components/Body.jsx";
+import Cards from "./components/Cards.jsx";
+import Footer from "./components/Footerbox.jsx";
+import EditorNavbar from "./components/EditorNavbar.jsx";
+import Community from "./components/Community.jsx";
+import Doubts from "./components/Doubts.jsx";
+import Profile from "./components/Profile.jsx";
 
 export default function App() {
   return (
