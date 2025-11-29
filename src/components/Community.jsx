@@ -16,7 +16,7 @@ export default function Community() {
             </div>
         </div>
         <div className={styles.comsearch}>
-            <input className={styles.comsearchbar} type="text" placeholder="Search REPO..." />
+            <input className={styles.comsearchbar} type="text" placeholder="Search" />
             <select className={styles.comlang}>
                     <option style={{color:"black"}} value="all">All</option>
                     <option style={{color:"black"}} value="javascript">JavaScript</option>

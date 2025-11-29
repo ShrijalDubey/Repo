@@ -93,7 +93,7 @@
 .expbtn:hover{
     background-color: #7c3aed;
     color: #e5e7eb;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
     box-shadow: 0px 0px 4px 0px #7c3aed;
     cursor: pointer;
 

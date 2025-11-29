@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from '../assets/profilephoto.jpg';
 import styles from '../css/Profile.module.css';
+import { useNavigate } from "react-router-dom";
 
 export default function Profile() {
+    const navigate = useNavigate();
   return (
     <>
     <div className={styles.profcont}>
         <div className={styles.profhero}>
             <div className={styles.namecard}>
-            <div>
-                <img style={{height:"150px",borderRadius:"30%",overflow:"hidden"}} src={logo} alt="Profile Photo" />
+            <div className={styles.pfp}>
+                <p>S</p>
             </div>
             <div>
                 <p className={styles.profname} style={{display:"inline",fontSize:'38px',fontWeight:'700'}}>_ShrijalDubey</p>
@@ -20,7 +21,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className={styles.addbtn}>
-                <button className={styles.compost}>
+                <button onClick={() => navigate("/editor")} className={styles.compost}>
                                 <i className="fa-solid fa-plus"></i> New Project
                 </button>
             </div>

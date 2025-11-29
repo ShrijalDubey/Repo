@@ -134,3 +134,16 @@
 .compost:hover{
     opacity: 0.8;   
 }
+.pfp {
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #3a3a3a;
+}

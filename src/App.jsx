@@ -5,7 +5,6 @@ import Body from "./components/Body.jsx";
 import Cards from "./components/Cards.jsx";
 import Footer from "./components/Footerbox.jsx";
 import Community from "./components/Community.jsx";
-import Doubts from "./components/Doubts.jsx";
 import Profile from "./components/Profile.jsx";
 import CodeEditor from "./components/CodeEditor.jsx";
 import { LanguageProvider } from "./components/LanguageContext";
