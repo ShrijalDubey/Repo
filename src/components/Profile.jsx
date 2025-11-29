@@ -6,7 +6,6 @@ import ComingSoon from './ComingSoon'
 export default function Profile() {
   return (
     <>
-    <ComingSoon/>
     <div className={styles.profcont}>
         <div className={styles.profhero}>
             <div>
