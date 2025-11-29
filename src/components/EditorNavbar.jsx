@@ -4,7 +4,7 @@ import { LanguageContext } from "./LanguageContext";
 import styles from '../css/EditorNavbar.module.css';
 import { executeCode } from "../api";
 
-export default function EditorNavbar({ code, setOutput, language, setIsError }) {
+export default function EditorNavbar({ code, setOutput, language, setIsError,input }) {
     const navigate = useNavigate();
     const { setLanguage } = useContext(LanguageContext);
 
@@ -12,13 +12,13 @@ export default function EditorNavbar({ code, setOutput, language, setIsError }) 
     if (!code) return;
     setOutput("Running...");
     try {
-        const result = await executeCode(code, language);
+        const result = await executeCode(code, language,input);
 
         const stderr = result?.run?.stderr;
         const stdout = result?.run?.output;
 
         if (stderr) {
-            const lines = stderr.split("\n").slice(0, 3).join("\n");
+            const lines = stderr.split("\n").slice(1, 7).join("\n");
             setOutput(lines);
             setIsError(true);
         } else {

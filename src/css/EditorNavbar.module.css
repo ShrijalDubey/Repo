@@ -52,9 +52,13 @@
     background-color:#3d3d3d;
 }
 .runbtn {
-    background-color:#0bb700 !important;
+    background-color:#0bb700;
 }
-
+.runbtn:hover{
+    background-color: transparent;
+    border: 1px solid #00d11a;
+    color: #00d11a;
+}
 .select {
     background:#252526;
     color:#dcdcdc;

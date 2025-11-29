@@ -1,5 +1,5 @@
 .editorbox{
-width: 75%;
+width: 73%;
 }
 .outputcontainer {
   margin-top: 20px;
@@ -15,19 +15,50 @@ width: 75%;
   display: flex;
 
 }
-
+.inputbox {
+  padding: 15px 15px;
+  background-color: transparent;
+  border: 0px;
+  height: 20%;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;  
+  font-family: monospace;
+  resize: none;
+  color: grey;
+}
 .outputbox {
-  background-color: #1e1e1e;       
   font-size: 22px;
   font-weight: 600;
   font-family: monospace;
-  color: #ffffff2f;             
+  color: #ffffff2f;  
+  font-style: italic;           
   padding: 15px;
-  width: 30%;
-  word-break: break-all;
-  overflow-wrap: break-word;          
+  height: 60vmin;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre;
+        
 } 
 .outputcontainer {
   display: flex;
   flex-direction: column;
+}
+.io {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+}
+.inputbox:focus {
+  outline: none;
+}
+.box{
+  padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    font-size: 22px;
+  font-weight: 400;
+  font-family: monospace;
+    border: 2px solid #3c3c3c;
+    background-color:#2c2c2c;
+    color:rgb(221, 220, 220);
 }

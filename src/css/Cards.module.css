@@ -91,3 +91,6 @@
   font-weight: 600;
   font-size: 28px;min-width: 5px;
 }
+@media (max-width:600px) {
+    .card
+}
