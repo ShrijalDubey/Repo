@@ -1,5 +1,5 @@
 import styles from '../css/Navbar.module.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 export default function Navbar() {
@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className={styles.container}>
       <div className={styles.box}>
         <p className={styles.logo}>
-          <Link to="/">
+          <NavLink to="/">
             <img
               src={logo}
               alt="Repo Logo"
@@ -17,16 +17,67 @@ export default function Navbar() {
                 horizontalAlign: 'middle',
               }}
             />
-          </Link>
+          </NavLink>
         </p>
 
         <ul>
-          <li><Link className={styles.btn} to="/"><i className="fa-solid fa-house"></i>Home</Link></li>
-          <li><Link className={styles.btn} to="/editor"><i className="fa-solid fa-code"></i> Editor</Link></li>
-          <li><Link className={styles.btn} to="/community"><i className="fa-solid fa-user-group"></i> Community</Link></li>
-          <li><Link className={styles.btn} to="/doubts"><i className="fa-solid fa-question"></i>Doubts</Link></li>
-          <li><Link className={styles.btn} to="/profile"><i className="fa-solid fa-user"></i> Profile</Link></li>
-          <li><Link className={`${styles.loginbtn} ${styles.btn}`} to="/login"><i className="fa-solid fa-right-to-bracket"></i> Login</Link></li>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? `${styles.btn} ${styles.active}` : styles.btn
+              }
+            >
+              <i className="fa-solid fa-house"></i> Home
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/editor"
+              className={({ isActive }) =>
+                isActive ? `${styles.btn} ${styles.active}` : styles.btn
+              }
+            >
+              <i className="fa-solid fa-code"></i> Editor
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/community"
+              className={({ isActive }) =>
+                isActive ? `${styles.btn} ${styles.active}` : styles.btn
+              }
+            >
+              <i className="fa-solid fa-user-group"></i> Community
+            </NavLink>
+          </li>
+
+
+          <li>
+            <NavLink
+              to="/profile"
+              className={({ isActive }) =>
+                isActive ? `${styles.btn} ${styles.active}` : styles.btn
+              }
+            >
+              <i className="fa-solid fa-user"></i> Profile
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/login"
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.btn} ${styles.loginbtn} ${styles.active}`
+                  : `${styles.btn} ${styles.loginbtn}`
+              }
+            >
+              <i className="fa-solid fa-right-to-bracket"></i> Login
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

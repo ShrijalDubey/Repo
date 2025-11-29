@@ -7,14 +7,14 @@ export default function Body() {
     <>
     <div className={styles.maincont}>
         <div>
-            <p className={styles.practice} ><i className="fa-solid fa-bolt"></i> Practice DSA with Real-Time Code Execution</p>
+            <p className={styles.practice} ><i className="fa-solid fa-bolt"></i>   Rapid Execution And Programming Online </p>
         </div>
         <div className={styles.mainhead}>
             <h1 className={styles.main}>Master <span className={styles.datastr}>Data Structures</span></h1>
             <h1 className={`${styles.main} ${styles.pos}`}>Through Coding</h1>
         </div>
         <div className={styles.desccont}>
-            <p className={styles.desc}>Write, run, and share code in Java, C++, Python, and JavaScript. Join a</p>
+            <p className={styles.desc}>Write, run, and share code in Java, C++, Python, JavaScript and a lot More. Join a</p>
             <p className={styles.desc2}> community of learners practicing algorithms together.</p>
         </div>
         <div className={styles.btndiv}>

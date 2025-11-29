@@ -1,12 +1,10 @@
 import React from 'react'
 import styles from '../css/Community.module.css'
 import photo from '../assets/pfp.png';
-import ComingSoon from './ComingSoon'
 
 export default function Community() {
   return (
     <>
-    <ComingSoon/>
     <div className={styles.communitycont}>
         <div className={styles.comheading}>
             <div className={styles.comhero}>
@@ -20,10 +18,19 @@ export default function Community() {
         <div className={styles.comsearch}>
             <input className={styles.comsearchbar} type="text" placeholder="Search REPO..." />
             <select className={styles.comlang}>
-                <option style={{color:"black"}} value="javascript">JavaScript</option>
-                <option style={{color:"black"}} value="java">Java</option>
-                <option style={{color:"black"}} value="python">Python</option>
-                <option style={{color:"black"}} value="cpp">C++</option>
+                    <option style={{color:"black"}} value="all">All</option>
+                    <option style={{color:"black"}} value="javascript">JavaScript</option>
+                    <option style={{color:"black"}} value="python">Python</option>
+                    <option style={{color:"black"}} value="java">Java</option>
+                    <option style={{color:"black"}} value="cpp">C++</option>
+                    <option style={{color:"black"}} value="c">C</option>
+                    <option style={{color:"black"}} value="go">Go</option>
+                    <option style={{color:"black"}} value="swift">Swift</option>
+                    <option style={{color:"black"}} value="rust">Rust</option>
+                    <option style={{color:"black"}} value="lua">Lua</option>
+                    <option style={{color:"black"}} value="ruby">Ruby</option>
+                    <option style={{color:"black"}} value="kotlin">Kotlin</option>
+                    <option style={{color:"black"}} value="php">PHP</option>
             </select>
         </div>
         <div className={styles.comgallery}>

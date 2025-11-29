@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../assets/profilephoto.jpg';
 import styles from '../css/Profile.module.css';
-import ComingSoon from './ComingSoon'
 
 export default function Profile() {
   return (
@@ -14,10 +13,8 @@ export default function Profile() {
             <div>
                 <p className={styles.profname} style={{display:"inline",fontSize:'38px',fontWeight:'700'}}>Shrijal Dubey</p>
                 <div className={styles.profstats}>
-                    <div className={styles.statbox}><p><i style={{color:"yellow"}} className="fa-solid fa-folder"></i> 45</p>REPOs Made</div>
+                    <div className={styles.statbox}><p><i style={{color:"yellow"}} className="fa-solid fa-folder"></i> 3</p>REPOs Made</div>
                     <div className={styles.statbox}><p><i style={{color:"red"}} className="fa-solid fa-user-group"></i> 50</p>Community Posts</div>
-                    <div className={styles.statbox}><p><i style={{color:"orange"}} className="fa-regular fa-circle-question"></i> 5</p>Doubts Asked</div>
-                    <div className={styles.statbox}><p><i style={{color:"green"}} className="fa-solid fa-check"></i> 3</p>Doubts Answered</div>
                 </div>
             </div>
         </div>
@@ -32,7 +29,7 @@ export default function Profile() {
                 <h2>Bubble Sort</h2>
                 <p>Java</p>
                 </div>
-                <div >
+                <div className={styles.rightrepo}>
                     <i className={`fa-solid fa-trash-can ${styles.image}`}></i>   
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
@@ -42,7 +39,7 @@ export default function Profile() {
                 <h2>Bubble Sort</h2>
                 <p>Java</p>
                 </div>
-                <div >
+                <div className={styles.rightrepo} >
                     <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>
@@ -52,7 +49,7 @@ export default function Profile() {
                 <h2>Bubble Sort</h2>
                 <p>Java</p>
                 </div>
-                <div >
+                <div className={styles.rightrepo} >
                     <i className={`fa-solid fa-trash-can ${styles.image}`}></i>  
                     <button className={styles.viewrepo}>View REPO</button>
                 </div>

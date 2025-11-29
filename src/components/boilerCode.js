@@ -35,4 +35,41 @@ int main() {
     return 0;
 }`,
 
+  lua: `-- Lua Boilerplate
+print("Hello World")`,
+
+  ruby: `# Ruby Boilerplate
+def hello
+  puts "Hello World"
+end
+
+hello`,
+
+  swift: `// Swift Boilerplate
+import Foundation
+
+print("Hello World")`,
+
+  rust: `// Rust Boilerplate
+fn main() {
+    println!("Hello World");
+}`,
+
+  kotlin: `// Kotlin Boilerplate
+fun main() {
+    println("Hello World")
+}`,
+
+  go: `// Go Boilerplate
+package main
+import "fmt"
+
+func main() {
+    fmt.Println("Hello World")
+}`,
+
+  php: `<?php
+// PHP Boilerplate
+echo "Hello World";
+?>`,
 };

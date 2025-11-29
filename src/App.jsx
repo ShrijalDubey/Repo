@@ -9,7 +9,6 @@ import Doubts from "./components/Doubts.jsx";
 import Profile from "./components/Profile.jsx";
 import CodeEditor from "./components/CodeEditor.jsx";
 import { LanguageProvider } from "./components/LanguageContext";
-import ComingSoon from './components/ComingSoon.jsx'
 
 export default function App() {
   return (
@@ -37,11 +36,6 @@ export default function App() {
        
           <Community />
           </>} />
-        <Route path="/doubts" element={
-          <>
-      
-          <Doubts />
-          </>} />
         <Route path="/profile" element={
           <>
          
@@ -49,7 +43,7 @@ export default function App() {
           </>} />
         <Route path="/login" element={
           <>
-         <ComingSoon/>
+          <div>Login page</div>
           </>
         } />
       </Routes>

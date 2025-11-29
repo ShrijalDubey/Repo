@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import Editor from "@monaco-editor/react";
 import styles from '../css/CodeEditor.module.css';
 import { LanguageContext } from "./LanguageContext";
-import { boilerCode } from "./BoilerCode.js";
+import { boilerCode } from "./boilerCode.js";
 import EditorNavbar from "./EditorNavbar";
 
 export default function CodeEditor() {
