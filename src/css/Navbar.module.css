@@ -47,9 +47,9 @@ ul {
   font-size: 28px;min-width: 5px;
 }
 .btn:hover {
-  background: #6365f1b5;
+  background: #434343b5;
   transition: 0.3s;
-  box-shadow: 0px 0px 4px 0px #6366f1;
+  box-shadow: 0px 0px 4px 0px #292929;
 }
 .loginbtn {
   background: #6a00f4

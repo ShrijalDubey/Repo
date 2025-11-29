@@ -1,8 +1,9 @@
 .profhero{
     display: flex;
-    align-items: start;
-    text-align: start;
+    align-items: center;
+    justify-content: space-between;
     gap: 30px;
+    padding: 0px 40px;
 }
 .profcont {
     padding: 40px;
@@ -27,13 +28,18 @@
     border-radius: 12px;
 }   
 .proflist {
-    padding: 40px;
+    padding: 20px 40px;
+    
+}
+.profilegallery{
+    overflow-y: auto;
+    height: 48vh;
+    padding-right: 20px;
 }
 .repocard {
-    background-color: #131313;
-    border: #e5e5e5 1px dashed;
+    background-color: #202020;
     border-radius: 12px;
-    padding: 20px;
+    padding: 20px 30px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -74,4 +80,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.langpic{
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: #353535;
+}
+.leftcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;    
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;  
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;     
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a3a #1a1a1a;
+}
+.namecard{
+    display: flex;
+    gap: 25px;
+}
+.compost{
+    width: 160px;
+    height: 60px;
+    background-color: #085fb6;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.compost:hover{
+    opacity: 0.8;   
 }
