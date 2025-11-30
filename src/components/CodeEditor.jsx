@@ -44,7 +44,8 @@ export default function CodeEditor() {
                         onChange={(value) => setCode(value)}
                         theme="vs-dark"
                         options={{
-                            fontSize: 24,
+                            fontFamily: 'JetBrains Mono, monospace',
+                            fontSize: 20,
                             minimap: { enabled: false },
                             padding: { top: 20 },
                         }}

@@ -73,7 +73,7 @@ export default function EditorNavbar({ code,setCode, setOutput, language, setIsE
                     className={styles.editbutton}
                     onClick={() => setCode(boilerCode[language])}
                 >
-                    <i className="fa-solid fa-broom"></i> Default Code
+                    <i class="fa-solid fa-repeat"></i> Default Code
                 </button>
 
 
