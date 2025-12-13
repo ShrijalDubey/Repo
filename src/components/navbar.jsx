@@ -43,7 +43,7 @@ export default function Navbar() {
             </NavLink>
           </li>
 
-          <li>
+          {/* <li>
             <NavLink
               to="/community"
               className={({ isActive }) =>
@@ -77,7 +77,7 @@ export default function Navbar() {
             >
               <i className="fa-solid fa-right-to-bracket"></i> Login
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

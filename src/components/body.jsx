@@ -26,8 +26,13 @@ export default function Body() {
                     <h1 className={`${styles.main} ${styles.pos}`}>Through Coding</h1>
                 </div>
 
+                <div className={styles.desccont}>
+                    <p className={styles.desc}>Write, execute, and experiment with data structure algorithms instantly using </p>
+                        <p className={styles.desc2}>a powerful online compiler and editor.</p>
+                </div>
+
                 <div className={styles.btndiv}>
-                    <button onClick={() => navigate("/login")} className={styles.startbtn}>
+                    <button onClick={() => navigate("/editor")} className={styles.startbtn}>
                         <i className="fa-solid fa-play"></i> Get Started
                     </button>
 
@@ -36,13 +41,8 @@ export default function Body() {
                     </button>
                 </div>
 
-                <div className={styles.stack}>
-                    <img src={img1} className={`${styles.card} ${styles.small}`} alt="" />
-                    <img src={img2} className={`${styles.card} ${styles.mid}`} alt="" />
-                    <img src={img3} className={`${styles.card} ${styles.big}`} alt="" />
-                    <img src={img4} className={`${styles.card} ${styles.mid}`} alt="" />
-                    <img src={img5} className={`${styles.card} ${styles.small}`} alt="" />
-                </div>
+                
+                
 
                 <div className={styles.langcont}>
                     <div className={styles.langallery}>

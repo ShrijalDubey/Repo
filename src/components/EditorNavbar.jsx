@@ -41,11 +41,11 @@ export default function EditorNavbar({ code,setCode, setOutput, language, setIsE
                     <i className="fa-solid fa-arrow-left"></i> Back
                 </button>
 
-                <input className={styles.filename} type="text" placeholder="Enter File Name" />
+                {/* <input className={styles.filename} type="text" placeholder="Enter File Name" />
 
                 <button className={styles.editbutton}>
                     <i className="fa-solid fa-floppy-disk"></i> Save
-                </button>
+                </button> */}
 
                 <button className={`${styles.editbutton} ${styles.runbtn}`} onClick={handleRun}>
                     <i className="fa-solid fa-play"></i> Run

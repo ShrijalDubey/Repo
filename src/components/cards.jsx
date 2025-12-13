@@ -3,7 +3,7 @@ export default function Cards() {
   return (
     <>
     <div className={styles.headingcont}>
-    <div className={styles.cardcont}>
+    {/* <div className={styles.cardcont}>
         <div  className={styles.card}>
            <i className={`${styles.image} fa-solid fa-code`}></i>
             <h2 className={`${styles.title} ${styles.colortext}`}>Multi-Language Editor</h2>
@@ -34,14 +34,14 @@ export default function Cards() {
             <h2 className={`${styles.title} ${styles.colortext}`}>Track Progress</h2>
             <p className={styles.para}>Save your projects,track your<br/> learning journey,and build your portfolio.</p>
         </div>
-    </div>
+    </div> */}
     <div className={styles.midbody}>
         <h1 style={{fontSize:"50px",fontWeight:"900"}}>Why Developers Love Us</h1>
         <p className={styles.subpara}><i style={{color:"rgba(11, 187, 1, 1)"}} className="fa-solid fa-circle-check"></i> No setup required. Write code and see results immediately with our powerful execution engine.</p>
         <p className={styles.subpara}><i style={{color:"rgba(11, 187, 1, 1)"}} className="fa-solid fa-circle-check"></i> Practice DSA concepts with real code, not just theory. Build muscle memory through repetition.</p>
         <p className={styles.subpara}><i style={{color:"rgba(11, 187, 1, 1)"}} className="fa-solid fa-circle-check"></i> Clear error messages, starter templates, and an intuitive interface designed for learners.</p>
         <p className={styles.subpara}><i style={{color:"rgba(11, 187, 1, 1)"}} className="fa-solid fa-circle-check"></i> Cloud-based platform accessible from any device. Your code is always saved and secure.</p>
-        <p className={styles.subpara}><i style={{color:"rgba(11, 187, 1, 1)"}} className="fa-solid fa-circle-check"></i> Showcase your best work to the community and potential employers.</p>
+        
     </div>
     </div>
     </>
