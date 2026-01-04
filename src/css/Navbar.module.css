@@ -1,20 +1,11 @@
-
 .container {
   margin: 0 auto;
   height: 70px;
   background-color: #131313;
 }
-.logo img:hover {
-  transform: scale(1.02);
-  transition-duration: 0.3s;
-}
-ul {
-  list-style-type: none;
-  display: flex;
-  gap: 8px;
-}
+
 .box {
-  padding: 10px 60px 10px 60px;
+  padding: 10px 60px;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -22,50 +13,77 @@ ul {
   border-bottom: rgb(43, 43, 43) 1px solid;
   height: 70px;
 }
+
+.logo img {
+  height: 35px;
+}
+
+.logo img:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+}
+
 .btn {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
   font-weight: 530;
   height: 42px;
-  text-align  : center;
-  padding: 0px 15px 0px 15px;
-  width: max-content;
-  align-items: center;
+  padding: 0 15px;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-radius: 12px;
   gap: 8px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
-.colortext {
-  background: linear-gradient(90deg, #6a00f4, #4b9fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
-  font-size: 28px;min-width: 5px;
-}
+
 .btn:hover {
   background: #434343b5;
-  transition: 0.3s;
   box-shadow: 0px 0px 4px 0px #292929;
 }
-.loginbtn {
-  background: #6a00f4
-}
-.loginbtn:hover {
-  box-shadow: 0px 0px 4px 0px #5d5ffb;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-.logo {
-  font-family: sans-serif;
-  font-size: 20px;
-  color: #ffffff;
-  font-weight: 700;
-  text-decoration: none;
-}
+
 .active {
-  background-color: rgba(255, 255, 255, 0.2); 
-  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .box {
+    padding: 10px 20px;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #131313;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
 }

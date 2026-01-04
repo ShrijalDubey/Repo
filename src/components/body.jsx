@@ -3,11 +3,6 @@ import styles from '../css/Body.module.css';
 import java from "../assets/java.png";
 import js from "../assets/js.png";
 import pyt from "../assets/pyt.svg";
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.png";
-import img3 from "../assets/img3.png";
-import img4 from "../assets/img4.png";
-import img5 from "../assets/img5.png";
 
 export default function Body() {
 
@@ -36,9 +31,6 @@ export default function Body() {
                         <i className="fa-solid fa-play"></i> Get Started
                     </button>
 
-                    <button onClick={() => navigate("/community")} className={styles.expbtn}>
-                        <i className="fa-solid fa-user-group"></i> Explore Community
-                    </button>
                 </div>
 
                 

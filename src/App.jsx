@@ -8,6 +8,7 @@ import Community from "./components/Community.jsx";
 import Profile from "./components/Profile.jsx";
 import CodeEditor from "./components/CodeEditor.jsx";
 import { LanguageProvider } from "./components/LanguageContext";
+import Footerl from "./components/Footer.jsx";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Body />
             <Cards />
             <Footer />
+            <Footerl />
           </>
         } />
         <Route path="/editor" element={

@@ -1,29 +1,31 @@
 import styles from '../css/Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className={styles.container}>
       <div className={styles.box}>
-        <p className={styles.logo}>
-          <NavLink to="/">
-            <img
-              src={logo}
-              alt="Repo Logo"
-              style={{
-                height: '35px',
-                verticalAlign: 'middle',
-                horizontalAlign: 'middle',
-              }}
-            />
-          </NavLink>
-        </p>
+        <NavLink to="/" className={styles.logo}>
+          <img src={logo} alt="Repo Logo" />
+        </NavLink>
 
-        <ul>
+        {/* Hamburger Icon */}
+        <div
+          className={styles.menuIcon}
+          onClick={() => setOpen(!open)}
+        >
+          <i className="fa-solid fa-bars"></i>
+        </div>
+
+        <ul className={`${styles.menu} ${open ? styles.show : ''}`}>
           <li>
             <NavLink
               to="/"
+              onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 isActive ? `${styles.btn} ${styles.active}` : styles.btn
               }
@@ -35,6 +37,7 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/editor"
+              onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 isActive ? `${styles.btn} ${styles.active}` : styles.btn
               }
@@ -42,42 +45,6 @@ export default function Navbar() {
               <i className="fa-solid fa-code"></i> Editor
             </NavLink>
           </li>
-
-          {/* <li>
-            <NavLink
-              to="/community"
-              className={({ isActive }) =>
-                isActive ? `${styles.btn} ${styles.active}` : styles.btn
-              }
-            >
-              <i className="fa-solid fa-user-group"></i> Community
-            </NavLink>
-          </li>
-
-
-          <li>
-            <NavLink
-              to="/profile"
-              className={({ isActive }) =>
-                isActive ? `${styles.btn} ${styles.active}` : styles.btn
-              }
-            >
-              <i className="fa-solid fa-user"></i> Profile
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/login"
-              className={({ isActive }) =>
-                isActive
-                  ? `${styles.btn} ${styles.loginbtn} ${styles.active}`
-                  : `${styles.btn} ${styles.loginbtn}`
-              }
-            >
-              <i className="fa-solid fa-right-to-bracket"></i> Login
-            </NavLink>
-          </li> */}
         </ul>
       </div>
     </nav>
