@@ -1,16 +1,140 @@
-# React + Vite
+# Repo – Online Code Editor & Compiler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Repo** is a modern, browser-based **online programming platform** designed to help students practice **data structures and algorithms** through real-time coding and execution. It provides a clean editor, multi-language support, and instant output — all without local setup.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Project Screenshots
 
-## React Compiler
+### Home / Landing Page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A focused landing experience encouraging users to start coding and master data structures.
 
-## Expanding the ESLint configuration
+![Repo Landing Page](./screenshots/repo-landing.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Online Code Editor
+
+A powerful editor with language selection, input/output panels, and one-click execution.
+
+![Repo Code Editor](./screenshots/repo-editor.png)
+
+---
+
+## 🎯 Project Purpose
+
+The objective of **Repo** is to:
+
+* Provide an easy-to-use online compiler for beginners
+* Help students practice **DSA concepts interactively**
+* Remove the need for local compiler setup
+* Offer a distraction-free coding environment
+
+This project is ideal for **college students**, **DSA learners**, and **academic demos**.
+
+---
+
+## 🚀 Key Features
+
+* Online code editor with syntax highlighting
+* Multi-language support
+* One-click code execution
+* Input box for custom test cases
+* Output console for results
+* Default boilerplate code per language
+* Clean and modern dark UI
+
+---
+
+## 💻 Supported Languages
+
+* Java
+* JavaScript
+* Python
+* C
+* C++
+* Go
+* Swift
+* Kotlin
+* Rust
+* Ruby
+* Lua
+* PHP
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* CSS / Tailwind CSS
+* Monaco Editor / CodeMirror
+
+### Backend *(Execution Engine)*
+
+* Node.js
+* Express.js
+* Language-specific runtime environments
+
+---
+
+## 📂 Project Structure (Typical)
+
+```
+repo-online-compiler/
+│
+├── client/
+│   ├── components/
+│   ├── css/
+│   ├── api.js/
+│   └── App.jsx
+│
+├── screenshots/
+├── README.md
+└── package.json
+```
+
+---
+
+## ▶️ How It Works
+
+1. User selects a programming language
+2. Default boilerplate code is loaded
+3. User writes or edits code
+4. Optional input is provided via Input Box
+5. Click **Run** to execute
+6. Output is displayed instantly
+
+---
+
+## 📈 Future Enhancements
+
+* User authentication
+* Save and share code snippets
+* DSA problem sets & playlists
+* Time and memory usage display
+* Submission history
+* Leaderboards
+
+---
+
+## 🎓 Target Audience
+
+* Computer Science students
+* DSA learners
+* Coding practice platforms
+* Academic project evaluations
+
+---
+
+## 📄 License
+
+This project is developed for **educational purposes**. Free to use, modify, and extend.
+
+---
+
+## 🙌 Acknowledgements
+
+* Open-source community
+* React ecosystem
+* Students and mentors contributing feedback
